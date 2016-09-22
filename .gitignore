@@ -1,0 +1,12 @@
+*.snap
+*.snap.sideinfo
+*.bin
+parts/xpnet
+stage
+snap
+prime
+.pc/
+*~
+*-config
+*/*/*~
+parts/plugins/__pycache__

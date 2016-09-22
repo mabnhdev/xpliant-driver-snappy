@@ -1,0 +1,17 @@
+name: xpliant-xpnet-driver
+version: '0.0.1'
+summary: Cavium-Xppliant xpnet Linux kernel driver.
+description: |
+         Cavium-Xppliant xpnet Linux kernel driver.
+grade: devel
+confinement: devmode
+
+parts:
+  xpnet:
+    plugin: make
+    source: https://github.com/XPliant/OpenXPS.git
+    source-subdir: xpnet
+    artifacts:
+      - xp80-Pcie-Endpoint.ko
+    make-parameters:
+      - KERNEL_SRC=<path to linux headers or linux build root>
